@@ -1,0 +1,161 @@
+.bookstore-container{
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(227, 223, 212);
+    width: 100%;
+    height: fit-content;
+    margin: 0%;
+    padding: 0%;
+}
+.bookstore-header {
+    font-family: "Poppins", sans-serif;
+    background-color: rgb(57, 69, 57);
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: fit-content;
+    position: fixed;
+    top:0%;
+    right: 0%;
+    left: 0%;
+    float: inline-end;
+    z-index: 1;
+}
+.bookstore-header h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    color:beige;
+    margin: 0;
+}
+.bookstore-nav-links{
+    display: flex;
+    gap:40px;
+}
+.bookstore-nav-links a{
+    font-family: "Poppins", sans-serif;
+    color:beige;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+.bookstore-main{
+    margin-top: 55px;
+    padding: 20px;
+    background-color: rgb(227, 223, 212);
+    position: relative;
+    min-height: 100vh; /* Allows content to grow and page to scroll */
+    height: auto;
+}
+.bookstore-section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.eachbook{
+    font-family: "Poppins", sans-serif;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(57, 69, 57);
+    color: beige;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+.eachbook p{
+    font-size: 17px;
+    line-height: 1.5;
+}
+.eachbook .deletebtn{
+    width: fit-content;
+    padding: 8px 15px;
+    position: absolute;
+    right:20px;
+    bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    color: rgb(57, 69, 57);
+}
+.Addbtn{
+    position: fixed;
+    right: 40px;
+    bottom:40px;
+    font-size: 44px;
+    color:beige;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:rgb(57, 69, 57);
+    border-radius: 50px;
+    cursor: pointer;
+}
+.overlay{
+    font-family: "Poppins", sans-serif;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(57, 69, 57, 0.7);
+    position: absolute;
+    top:0;
+    left: 0;
+    right: 0; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    display: none;
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    background-color:  rgb(227, 223, 212);
+    width: 400px;
+    height: 350px;
+    padding: 25px;
+    gap:20px;
+    border-radius: 10px;
+}
+.inputbox label{
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    
+}
+.inputbox input{
+    font-family: "Poppins", sans-serif;
+    padding: 8px;
+    border-radius: 5px;
+    border: none;
+}
+.inputbox textarea{
+    font-family: "Poppins", sans-serif;
+    height: 100px;
+    border-radius: 5px;
+    padding: 8px;
+    border: none;
+}
+.inputbox input:focus,
+.inputbox textarea:focus {
+  outline: none;
+  box-shadow: 0 0 8px 0.5px #7e9e7e;/* optional, removes any shadow */
+}
+.inputbtn{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.inputbtn :where(.attach, .cancel){
+    width: fit-content;
+    padding: 8px 20px 8px 20px;
+    border-radius: 5px;
+    border: none;
+    background-color:rgb(57, 69, 57);
+    color: beige;
+    cursor: pointer;
+}
